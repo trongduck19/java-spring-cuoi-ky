@@ -22,7 +22,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(configurer->
                 configurer
-                        .requestMatchers("/").hasRole("DANCE")
+                        .requestMatchers("/").hasRole("STUDENT")
                         .requestMatchers("/admin/**").hasRole("MANAGER")
                         .requestMatchers("/system").hasRole("ADMIN")
                         .anyRequest().authenticated()

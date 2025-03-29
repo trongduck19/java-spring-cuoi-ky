@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="https://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{default/layout}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/default/css/style.css}">
+    <title>About Us - Dance Studio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <section layout:fragment="main-content">
+     <!-- Page Header -->
+     <section class="page-header">
+        <div class="container">
+          <h1>About Us</h1>
+          <p>
+            Learn more about our dance studio, our journey, and our passion for
+            dance.
+          </p>
+        </div>
+      </section>
+  
+      <!-- About Section -->
+      <section class="about-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="about-image">
+                <img
+                th:src="@{/default/images/about-studio.png}" alt="Our Dance Studio"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h2>Our Story</h2>
+              <p>
+                Founded in 2005, our dance studio began with a simple mission: to
+                create a welcoming space where people of all ages and backgrounds
+                could discover the joy of dance. What started as a small studio
+                with just two instructors has grown into a thriving community of
+                dancers, instructors, and dance enthusiasts.
+              </p>
+              <p>
+                Over the years, we've helped thousands of students find their
+                rhythm, build confidence, and develop lifelong skills through the
+                art of dance. Our instructors are not just teachers but mentors
+                who are passionate about nurturing each student's unique talents.
+              </p>
+              <p>
+                Today, we offer a wide range of dance styles, from classical
+                ballet to contemporary hip-hop, and everything in between. Whether
+                you're a beginner taking your first steps or an experienced dancer
+                looking to refine your technique, we have classes and programs
+                designed to meet you where you are and help you grow.
+              </p>
+              <button class="btn custom-btn mt-3">Join Our Community</button>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Our Values Section -->
+      <section class="values-section">
+        <div class="container">
+          <h2 class="mb-4">Our Values</h2>
+          <p class="section-subtitle">
+            These core principles guide everything we do at our dance studio.
+          </p>
+  
+          <div class="row">
+            <div class="col-md-4">
+              <div class="value-card">
+                <div class="value-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <h3>Passion</h3>
+                <p>
+                  We believe dance is more than movement; it's an expression of
+                  passion. Our instructors bring their love for dance into every
+                  class, inspiring students to connect with their own passion.
+                </p>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="value-card">
+                <div class="value-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <h3>Community</h3>
+                <p>
+                  Dance brings people together. We foster a supportive community
+                  where dancers encourage each other, form friendships, and grow
+                  together both on and off the dance floor.
+                </p>
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="value-card">
+                <div class="value-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <h3>Excellence</h3>
+                <p>
+                  We strive for excellence in everything we do, from teaching
+                  techniques to organizing performances. We believe in challenging
+                  ourselves and our students to achieve their highest potential.
+                </p>
+              </div>
+            </div>
+  
+            <!-- <div class="col-md-6">
+              <div class="value-card">
+                <div class="value-icon">
+                  <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <h3>Inclusivity</h3>
+                <p>
+                  Dance is for everyone. We create an inclusive environment where
+                  dancers of all backgrounds, abilities, and experience levels
+                  feel welcome and valued. Our diverse programs ensure there's
+                  something for everyone.
+                </p>
+              </div>
+            </div>
+  
+            <div class="col-md-6">
+              <div class="value-card">
+                <div class="value-icon">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Creativity</h3>
+                <p>
+                  We encourage creative expression and innovation. Dance is an art
+                  form that's constantly evolving, and we embrace new styles,
+                  techniques, and approaches while respecting the traditions that
+                  form the foundation of dance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+  
+      <!-- Team Section (Extended from Home Page) -->
+      <section class="team-section">
+        <div class="container">
+          <h2>Meet Our Instructors</h2>
+          <p class="section-subtitle">
+            Our team of professional and experienced dance instructors is
+            dedicated to helping you achieve your dance goals.
+          </p>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="team-member">
+                <img
+                th:src="@{/default/images/team1.png}"
+                  alt="Team Member"
+                  class="img-fluid"
+                />
+                <h3>ETHEL HUNTER</h3>
+                <p>Ballet & Contemporary</p>
+                <p class="instructor-bio">
+                  With over 15 years of professional dance experience, Ethel
+                  brings classical training and innovative techniques to her
+                  classes. Her students appreciate her attention to detail and
+                  supportive teaching style.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-member">
+                <img
+                th:src="@{/default/images/team4.png}"
+                  alt="Team Member"
+                  class="img-fluid"
+                />
+                <h3>AIDEN RAMSEY</h3>
+                <p>Hip-Hop & Urban</p>
+                <p class="instructor-bio">
+                  Aiden's energetic classes combine classic hip-hop foundations
+                  with modern street style. His background in competitive dance
+                  brings a unique perspective that challenges and motivates his
+                  students.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-member">
+                <img
+                th:src="@{/default/images/team5.png}"
+                  alt="Team Member"
+                  class="img-fluid"
+                />
+                <h3>FANNIE LEWIS</h3>
+                <p>Latin & Ballroom</p>
+                <p class="instructor-bio">
+                  Fannie specializes in partner dancing, with expertise in salsa,
+                  tango, and ballroom styles. Her classes focus on technique,
+                  connection, and the joy of dancing with others.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-member">
+                <img
+                th:src="@{/default/images/team6.png}"
+                  alt="Team Member"
+                  class="img-fluid"
+                />
+                <h3>MICHAEL CHEN</h3>
+                <p>Breaking & Popping</p>
+                <p class="instructor-bio">
+                  Michael brings his competitive background in breakdancing to his
+                  high-energy classes. He's known for breaking down complex moves
+                  into accessible steps for dancers of all levels.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-member">
+                <img
+                th:src="@{/default/images/team7.png}"
+                  alt="Team Member"
+                  class="img-fluid"
+                />
+                <h3>SOPHIA RODRIGUEZ</h3>
+                <p>Jazz & Musical Theater</p>
+                <p class="instructor-bio">
+                  With a background in Broadway productions, Sophia brings
+                  theatrical elements to her dance classes. She specializes in
+                  helping dancers develop performance skills alongside technique.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-member">
+                <img
+                th:src="@{/default/images/team8.png}"
+                  alt="Team Member"
+                  class="img-fluid"
+                />
+                <h3>DAVID WASHINGTON</h3>
+                <p>Children's Program Director</p>
+                <p class="instructor-bio">
+                  David has a special talent for working with young dancers. His
+                  playful approach makes learning dance fundamentals fun while
+                  building a strong technical foundation for future growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+</body>
+</html>

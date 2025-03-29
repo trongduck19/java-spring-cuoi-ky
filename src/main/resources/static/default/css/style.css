@@ -1,0 +1,632 @@
+/* Import Bootstrap */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
+
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Base Styles */
+:root {
+  --primary-color: #8c7b5a;
+  --secondary-color: #f5f0e1;
+  --dark-color: #5a4d38;
+  --text-color: #555555;
+  --light-bg: #f8f5eb;
+  --footer-bg: #222222;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+/* Buttons */
+.custom-btn {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.subscribe-btn {
+  background-color: var(--dark-color);
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  font-size: 12px;
+}
+
+.subscribe-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Navigation */
+.navbar {
+  background-color: var(--light-bg);
+  padding: 15px 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  height: 45px; 
+  width: 45px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin-right: 12px; 
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: 300px; /* Điều chỉnh theo thiết kế */
+  object-fit: cover; /* Giúp ảnh không bị méo */
+  border-radius: 10px; /* Bo góc nhẹ để nhìn đẹp hơn */
+}
+
+.logo-text {
+  font-weight: 600;
+  color: var(--dark-color);
+  font-size: 18px;
+}
+
+.navbar-nav .nav-link {
+  color: var(--dark-color);
+  font-weight: 500;
+  margin: 0 10px;
+  position: relative;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--primary-color);
+}
+
+.search-icon {
+  font-size: 14px;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--light-bg);
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.dancer-img-container {
+  text-align: center;
+}
+
+.hero-content {
+  padding-left: 20px;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--dark-color);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+/* Class Offers Section */
+.class-offers {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.class-card {
+  background-color: var(--light-bg);
+  padding: 40px 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+}
+
+.dance-icon {
+  height: 150px;
+}
+
+.class-card h3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.class-card p {
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* Team Section */
+.team-section {
+  background-color: var(--secondary-color);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.team-member {
+  margin-bottom: 30px;
+}
+
+.team-member img {
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.team-member h3 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.team-member p {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* Dance For Fun Section */
+.dance-fun-section {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 80px 0;
+  position: relative;
+}
+
+.instructor-feature {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.feature-text {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.feature-text p {
+  font-style: italic;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.feature-text h3 {
+  color: white;
+  font-size: 24px;
+}
+
+.fun-content h2 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.fun-content p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.newsletter-signup {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  border: none;
+  padding: 10px 15px;
+}
+
+.small-text {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Let's Dance Section */
+.lets-dance-section {
+  padding: 80px 0;
+  background-color: var(--light-bg);
+}
+
+.dancer-circle {
+  text-align: center;
+}
+
+.dancer-circle img {
+  border-radius: 50%;
+  max-width: 300px;
+}
+
+.lets-dance-content {
+  padding-left: 30px;
+}
+
+.lets-dance-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.lets-dance-content p {
+  margin-bottom: 30px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--footer-bg);
+  color: white;
+  padding: 80px 0 50px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo .logo-text {
+  color: white;
+}
+
+.social-icons {
+  margin-top: 25px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  color: white;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: var(--primary-color);
+}
+
+.site-footer h4 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+  .hero-content {
+    padding-left: 0;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .hero-content p {
+    margin: 0 auto 30px;
+  }
+
+  .lets-dance-content {
+    padding-left: 0;
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .team-section h2,
+  .fun-content h2,
+  .lets-dance-content h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .dancer-circle img {
+    max-width: 250px;
+  }
+}
+
+/* Additional Page Styles */
+/* Page Header */
+.page-header {
+  background-color: var(--secondary-color);
+  padding: 80px 0 40px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.page-header p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Product Page */
+.product-gallery {
+  padding: 80px 0;
+}
+
+.product-card {
+  margin-bottom: 40px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.product-img {
+  width: 80%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.product-info {
+  padding: 25px;
+  background-color: white;
+}
+
+.product-info h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.product-price {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Promo Page */
+.promo-section {
+  padding: 80px 0;
+}
+
+.promo-card {
+  background-color: var(--light-bg);
+  padding: 30px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-badge {
+  position: absolute;
+  top: 20px;
+  right: -30px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 40px;
+  transform: rotate(45deg);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.promo-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.promo-price {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #aaa;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.promo-features {
+  margin: 20px 0;
+  padding-left: 0;
+}
+
+.promo-features li {
+  list-style: none;
+  padding: 5px 0;
+  position: relative;
+  padding-left: 25px;
+}
+
+.promo-features li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* About Page */
+.about-section {
+  padding: 80px 0;
+}
+
+.about-image {
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+}
+
+.values-section {
+  background-color: var(--light-bg);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.value-card {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.value-icon {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+/* Contact Page */
+.contact-section {
+  padding: 80px 0;
+}
+
+.contact-info {
+  margin-bottom: 50px;
+}
+
+.contact-card {
+  padding: 30px;
+  background-color: var(--light-bg);
+  border-radius: 6px;
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.contact-icon {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.contact-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  padding: 12px 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+
+textarea.form-control {
+  height: 150px;
+}
+
+.map-container {
+  height: 450px;
+  border-radius: 6px;
+  overflow: hidden;
+}
